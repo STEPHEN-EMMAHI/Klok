@@ -1,12 +1,12 @@
 /* ==>> IMPORTS */
-import { showTime } from "./time.js";
 import { showNavBar } from "./navbar.js";
 import { renderPage } from "./render-page.js";
+import { showTime } from "./time.js";
 
-/*  ==>> SHOWING NAVIGATION BAR */
+/* EXECUTING showNavBar FUNCTION */
 showNavBar();
 
-/* ==>> RENDERING PAGE UPON LOAD */
+// RENDERING THE TIME ON PAGE LOAD
 if (
   document.readyState === "interactive" ||
   document.readyState === "complete"
@@ -15,8 +15,3 @@ if (
 } else {
   document.addEventListener("DOMContentLoaded", renderPage);
 }
-
-/* ==>> SHOW TIME WHEN TIME-BTN IS CLICKED */
-// get the time-btn
-const TIME_BTN = document.getElementById("time-btn");
-TIME_BTN.addEventListener("click", showTime);
