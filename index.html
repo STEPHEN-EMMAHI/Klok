@@ -25,11 +25,15 @@
         id="nav"
       >
         <button
+          id="time-btn"
           class="active bg-blue-700 rounded-md px-2 py-1.5 transition-colors duration-150"
         >
           Time
         </button>
-        <button class="rounded-md px-2 py-1.5 transition-colors duration-150">
+        <button
+          id="alarm-btn"
+          class="rounded-md px-2 py-1.5 transition-colors duration-150"
+        >
           Alarm
         </button>
         <button class="rounded-md px-2 py-1.5 transition-colors duration-150">
@@ -40,7 +44,12 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main
+      class="m-8 bg-zinc-800 rounded-2xl h-[75vh] flex flex-col justify-center items-center gap-10"
+    >
+      <div class="time-display text-[3.5rem] text-white"></div>
+      <div class="date-display text-[1.3rem]"></div>
+    </main>
     <script src="./src/main.js" type="module"></script>
   </body>
 </html>
