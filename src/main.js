@@ -15,3 +15,8 @@ if (
 } else {
   document.addEventListener("DOMContentLoaded", renderPage);
 }
+
+/* SHOW TIME WHEN TIME-BTN IS CLICKED */
+// get the time-btn
+const TIME_BTN = document.getElementById("time-btn");
+TIME_BTN.addEventListener("click", showTime);
