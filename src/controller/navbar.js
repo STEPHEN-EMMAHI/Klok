@@ -1,8 +1,10 @@
-/* TOGGLING NAVIGATION BAR */
+/****** >>> TOGGLING NAVIGATION BAR <<< ******/
+
 // using event delegation
 // get the container's ID
 const NAV_CONTAINER = document.getElementById("nav");
 
+/**  NAVBAR FUNCTION **/
 export function showNavBar() {
   // adding an event listener
   NAV_CONTAINER.addEventListener("click", (event) => {
