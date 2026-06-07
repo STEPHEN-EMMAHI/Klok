@@ -60,15 +60,15 @@ This section describes how data moves through the system when a user performs an
 
 ```text
  User Interacts with any app module
-       ⬇
+    ⬇
  Buttons and screens receive user's actions
-       ⬇
+    ⬇
  The appropriate module handles the action
-       ⬇
+    ⬇
  Fetch data from memory depending on particular action
-       ⬆
+    ⬆
  Updated information goes back to buttons and screens
-       ⬆
+    ⬆
  User sess result
 ```
 
