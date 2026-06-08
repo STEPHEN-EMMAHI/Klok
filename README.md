@@ -43,8 +43,6 @@ MVC Architecture
 - Frontend - HTML,Traditional CSS, Tailwind CSS, Vanilla Javascrip.
 - Bundler - Vite 
 
--- Handles user interactions
-
 ### Data Flow :
 
 This section describes how data moves through the system when a user performs an action.
