@@ -73,7 +73,7 @@ This section describes how data moves through the system when a user performs an
 ```text
  User opens the link
     ⬇
- Show navigation bar with the features
+ Show navigation bar
     ⬆
  If page is fully loaded then immediately show time feature
     ⬆
