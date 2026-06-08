@@ -40,15 +40,8 @@ MVC Architecture
 
 ### Stack :
 
-- HTML
-- Traditional CSS
-- Tailwind CSS
-- Vanilla Javascript
-- Vite Bundler
-
-### Components :
-
-#### Frontend
+- Frontend - HTML,Traditional CSS, Tailwind CSS, Vanilla Javascrip.
+- Bundler - Vite 
 
 -- Handles user interactions
 
