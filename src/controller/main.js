@@ -2,7 +2,7 @@
 import { showNavBar } from "./navbar.js";
 import { renderPage } from "./render-page.js";
 import { showTime } from "../model/time.js";
-import { showTimer, triggerSchedules } from "../model/timer.js";
+import { showTimer, triggerSchedules, sound } from "../model/timer.js";
 
 /* ==>> Show NavBar when navigation is clicked */
 const NAV_CONTAINER = document.getElementById("nav");
@@ -32,3 +32,7 @@ TIMER_BTN.addEventListener("click", () => {
 /* ==>> CHANGE BACKGROUND WHEN SCHEDULES IS CLICKED */
 const SCHEDULE_CONTAINER = document.getElementById("schedules");
 SCHEDULE_CONTAINER.addEventListener("click", triggerSchedules);
+
+/* SOUND */
+const SOUND_CONTAINER = document.querySelector(".sound");
+SOUND_CONTAINER.addEventListener("click", sound);
