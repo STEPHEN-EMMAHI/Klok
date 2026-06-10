@@ -34,6 +34,7 @@ Klok is a timer tool that helps you know the current time, set a timer to be pro
 
 - Application should run on modern browsers
 - Data will be lost upon refresh
+- Light mode screens not yet set 
 
 ### Assumptions :
 
