@@ -2,7 +2,12 @@
 
 ## OVERVIEW
 
-Klok is a timer tool that helps us know the current time, set an alarm to wakeup, set a timer for productivity and set a stopwatch for elapse time.
+Klok is a timer tool that helps you know the current time, set an alarm to wakeup, set a timer for productivity and set a stopwatch for elapse time.
+
+## TARGET USERS
+- Students 
+- Teachers
+- Entrepreneurs
 
 ## FEATURES
 
@@ -42,17 +47,8 @@ MVC Architecture
 
 ### Stack :
 
-- HTML
-- Traditional CSS
-- Tailwind CSS
-- Vanilla Javascript
-- Vite Bundler
-
-### Components :
-
-#### Frontend
-
--- Handles user interactions
+- Frontend - HTML,Traditional CSS, Tailwind CSS, Vanilla Javascrip.
+- Bundler - Vite 
 
 ### Data Flow :
 
@@ -79,7 +75,7 @@ This section describes how data moves through the system when a user performs an
 ```text
  User opens the link
     ⬇
- Show navigation bar with the features
+ Show navigation bar
     ⬆
  If page is fully loaded then immediately show time feature
     ⬆
