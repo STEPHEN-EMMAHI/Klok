@@ -4,6 +4,10 @@
 
 Klok is a timer tool that helps you know the current time, set a timer to be productive. This project is sorely for the purpose of learning and improve programming in javascript.
 
+#### Preview app
+[Preview Klok](https://klok-theta.vercel.app/)
+
+
 ## TARGET USERS
 
 - Students
