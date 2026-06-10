@@ -20,12 +20,19 @@ export function showTime() {
   const TIME = new Date();
 
   // insert the hours, minutes and seconds into the html
-  TIME_DISPLAY.textContent = TIME.toLocaleTimeString("en-US", {
+  const formatter = new Intl.DateTimeFormat("en-US", {
     hour12: true,
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-  }).replaceAll(":", " : ");
+  });
+
+  const parts = formatter.formatToParts(TIME).reduce((acc, part) => {
+    acc[part.type] = part.value;
+    return acc;
+  }, {});
+
+  TIME_DISPLAY.textContent = `${parts.hour} : ${parts.minute} : ${parts.second} ${parts.dayPeriod}`;
 
   // updating the time on every second
   const DELAY = 1000 - TIME.getMilliseconds();
