@@ -20,6 +20,7 @@ const PLAY_ICON = document.getElementById("play-icon");
 const PAUSE_ICON = document.getElementById("pause-icon");
 const PLAY_LABEL = document.getElementById("play-span");
 const PREVENT_START = document.getElementById("prevent-start");
+const TIMER_STARTER = document.querySelector(".timer-starter");
 
 /****** >>> SHOW TIMER FEATURE <<< ****/
 export function showTimer() {
@@ -218,4 +219,17 @@ function startCountDownLoop() {
 
     updateCountDownDisplay(totalSeconds);
   }, 1000);
+}
+
+/* SOUND */
+export function sound() {
+  const PREVENT_SOUND = document.querySelector(".prevent-sound");
+  PREVENT_SOUND.innerHTML = "Sound is disabled";
+  PREVENT_SOUND.classList.add("text-red-400");
+
+  // hide after 2 seconds
+  setTimeout(() => {
+    PREVENT_SOUND.innerHTML = "";
+    PREVENT_SOUND.classList.remove("text-red-400");
+  }, 2000);
 }
