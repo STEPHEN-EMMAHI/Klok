@@ -14,7 +14,7 @@
     <title>Klok</title>
     <link rel="stylesheet" href="./src/view/style.css" />
     <link rel="stylesheet" href="./src/view/keen-slider.css" />
-    <link rel="icon" href="./public/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="./favicon-32x32.png" type="image/png" />
   </head>
   <body>
     <!-- HEADER -->
@@ -33,20 +33,6 @@
           Time
         </a>
         <a
-          href="/alarm"
-          id="navigation-alarm"
-          class="rounded-md px-2 py-1.5 transition-colors duration-150 md:cursor-pointer"
-        >
-          Alarm
-        </a>
-        <a
-          href="/stopwatch"
-          id="navigation-stopwatch"
-          class="rounded-md px-2 py-1.5 transition-colors duration-150 md:cursor-pointer"
-        >
-          Stopwatch
-        </a>
-        <a
           href="/timer"
           id="navigation-timer"
           class="rounded-md px-2 py-1.5 transition-colors duration-150 md:cursor-pointer"
@@ -60,7 +46,7 @@
     <main class="m-8 bg-zinc-800 rounded-2xl md:w-[50%] md:mx-auto">
       <!-- TIME FEATURE -->
       <div
-        class="feature time-feature hidden h-fit py-14 flex-col justify-center items-center gap-10"
+        class="feature time-feature hidden h-fit py-14 flex-col justify-center items-center gap-7"
       >
         <p class="time-display text-[3rem] text-white"></p>
         <p class="date-display text-[1.3rem]"></p>
@@ -155,13 +141,6 @@
               <span class="text-xl">Exercise</span>
               <span class="text-sm">00:15:00</span>
             </button>
-            <!-- add button -->
-            <button
-              aria-label="schedule-button"
-              class="bg-zinc-900 py-9 px-10 text-3xl"
-            >
-              +
-            </button>
           </div>
         </div>
         <!-- timer starter -->
@@ -242,6 +221,9 @@
             <span>Sound</span>
           </div>
         </div>
+
+        <!-- prevent sound -->
+        <p class="prevent-sound flex justify-center py-2"></p>
         <!-- prevent start countdown when time is 0s' -->
         <p id="prevent-start" class="flex justify-center py-2"></p>
       </div>

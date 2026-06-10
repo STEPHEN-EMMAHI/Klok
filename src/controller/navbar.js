@@ -31,8 +31,4 @@ export function showNavBar(event) {
     "text-white",
     "text-[1.4rem]",
   );
-
-  // read the URL
-  const TARGET_URL = ACTIVE_BTN.getAttribute("href");
-  history.pushState(null, "", TARGET_URL);
 }
