@@ -32,8 +32,7 @@ Klok is a timer tool that helps you know the current time, set an alarm to wakeu
 ### Constraints :
 
 - Application should run on modern browsers
-- Refresh will always start the app all over
-- Fall short of history API routing or localeStorage
+- Data will be lost upon refresh
 
 ### Assumptions :
 
