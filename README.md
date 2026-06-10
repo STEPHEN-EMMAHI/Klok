@@ -43,6 +43,7 @@ Klok is a timer tool that helps you know the current time, set a timer to be pro
 ### Assumptions :
 
 - Application requires internet access
+- Time defaults to the user's system time
 
 ## ARCHITECTURE
 
