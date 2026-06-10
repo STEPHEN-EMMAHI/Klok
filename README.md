@@ -131,3 +131,23 @@ NOTE: If user clicks on navigation time feature, also show the    time feature (
 ```text
 
 ```
+
+## HOW TO RUN THIS PROJECT
+
+1. clone the project
+
+```
+git clone
+```
+
+2. install dependencies
+
+```
+npm install
+```
+
+3. run the development
+
+```
+npm run dev
+```
