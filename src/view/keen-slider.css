@@ -13,11 +13,13 @@
   overflow: visible;
   width: 100%;
 }
+
 .wheel--perspective-right .wheel__inner {
   perspective-origin: calc(50% + 100px) 50%;
   transform: translateX(10px);
   -webkit-transform: translateX(10px);
 }
+
 .wheel--perspective-left .wheel__inner {
   perspective-origin: calc(50% - 100px) 50%;
   transform: translateX(-10px);
