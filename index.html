@@ -22,20 +22,20 @@
       <h1 class="text-center">Klok</h1>
       <!-- nav -->
       <nav
-        class="flex gap-4 text-xl bg-zinc-800 w-fit mx-auto rounded-md"
+        class="flex gap-4 text-xl text-black bg-gray-300 w-fit mx-auto rounded-md dark:bg-zinc-800 dark:text-gray-400"
         id="nav"
       >
         <a
           href="/time"
           id="navigation-time"
-          class="active bg-blue-700 rounded-md px-2 py-1.5 transition-colors duration-150 text-white text-[1.4rem] md:cursor-pointer"
+          class="active rounded-md px-2 py-1.5 bg-blue-700 transition-colors duration-150 text-white text-[1.4rem] cursor-pointer"
         >
           Time
         </a>
         <a
           href="/timer"
           id="navigation-timer"
-          class="rounded-md px-2 py-1.5 transition-colors duration-150 md:cursor-pointer"
+          class="rounded-md px-2 py-1.5 transition-colors duration-150"
         >
           Timer
         </a>
@@ -43,13 +43,15 @@
     </header>
 
     <!-- MAIN -->
-    <main class="m-8 bg-zinc-800 rounded-2xl md:w-[50%] md:mx-auto">
+    <main
+      class="m-8 bg-gray-800 rounded-2xl md:w-[50%] md:mx-auto dark:bg-zinc-800"
+    >
       <!-- TIME FEATURE -->
       <div
-        class="feature time-feature hidden h-fit py-14 flex-col justify-center items-center gap-7"
+        class="feature time-feature hidden h-[60vh] py-14 flex-col justify-center items-center gap-7"
       >
-        <p class="time-display text-[3rem] text-white"></p>
-        <p class="date-display text-[1.3rem]"></p>
+        <p class="time-display text-[2rem] text-white"></p>
+        <p class="date-display text-base text-teal-300 dark:text-gray-400"></p>
       </div>
 
       <!-- TIMER FEATURE -->
@@ -65,13 +67,13 @@
             <div id="minute-wheel" class="minuteWheel w-44"></div>
             <div id="second-wheel" class="secondWheel w-44"></div>
           </div>
-          <!-- timer schedules -->
+          <!-- timer quick schedules schedules -->
           <div class="p-5 flex gap-2 w-full flex-wrap" id="schedules">
             <!-- meeting button -->
             <button
               data-time="00:20:00"
               aria-label="meeting-button"
-              class="bg-zinc-900 p-4 flex flex-col justify-center items-center gap-2"
+              class="bg-zinc-900 text-gray-400 p-4 flex flex-col justify-center items-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@
             <button
               data-time="00:10:00"
               aria-label="sleep-button"
-              class="bg-zinc-900 p-4 flex flex-col justify-center items-center gap-2"
+              class="bg-zinc-900 text-gray-400 p-4 flex flex-col justify-center items-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +120,7 @@
             <button
               data-time="00:15:00"
               aria-label="exercise-button"
-              class="bg-zinc-900 p-4 flex flex-col justify-center items-center gap-2"
+              class="bg-zinc-900 text-gray-400 p-4 flex flex-col justify-center items-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +166,7 @@
                 <polyline points="3 3 3 8 8 8" />
               </svg>
             </button>
-            <span>Reset</span>
+            <span class="text-white dark:text-gray-400">Reset</span>
           </div>
           <!-- play/pause button -->
           <div class="start flex flex-col items-center gap-2" id="start">
@@ -197,7 +199,9 @@
                 <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
               </svg>
             </button>
-            <span id="play-span">Start</span>
+            <span id="play-span" class="text-white dark:text-gray-400"
+              >Start</span
+            >
           </div>
           <!-- sound -->
           <div class="sound flex flex-col items-center">
@@ -218,7 +222,7 @@
                 <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
               </svg>
             </button>
-            <span>Sound</span>
+            <span class="text-white dark:text-gray-400">Sound</span>
           </div>
         </div>
 
