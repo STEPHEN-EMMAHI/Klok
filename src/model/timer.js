@@ -50,11 +50,11 @@ export function triggerSchedules(event) {
       "bg-[#1e2530]",
       "text-blue-400",
     );
-    CURRENT_BTN.classList.add("bg-zinc-900");
+    CURRENT_BTN.classList.add("bg-zinc-900", "text-gray-400");
   }
 
   // always activate the newly clicked button
-  ACTIVE_BTN.classList.remove("bg-zinc-900");
+  ACTIVE_BTN.classList.remove("bg-zinc-900", "text-gray-400");
   ACTIVE_BTN.classList.add("activeSchedule", "bg-[#1e2530]", "text-blue-400");
 
   /* SCHEDULE QUICK TIME */
